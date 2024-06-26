@@ -1,0 +1,7 @@
+verilog work "UART_Transmitter.v"
+verilog work "UART_Receiver.v"
+verilog work "BCLK_Generator.v"
+verilog work "APB_Interface.v"
+verilog work "APB_UART_top.v"
+verilog work "ReceivedataEvenParity.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

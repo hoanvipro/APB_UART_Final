@@ -1,0 +1,31 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/hoanvip/VerilogProject/APB_UART_Project/ReceivedataEvenParity_isim_beh.exe -prj /home/hoanvip/VerilogProject/APB_UART_Project/ReceivedataEvenParity_beh.prj work.ReceivedataEvenParity work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" into library work
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" into library work
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/BCLK_Generator.v" into library work
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/APB_Interface.v" into library work
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/APB_UART_top.v" into library work
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/ReceivedataEvenParity.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/hoanvip/VerilogProject/APB_UART_Project/APB_UART_top.v" Line 168: Size mismatch in connection of port <data_out>. Formal port size is 10-bit while actual signal size is 8-bit.
+Completed static elaboration
+Fuse Memory Usage: 85076 KB
+Fuse CPU Usage: 1140 ms
+Compiling module APB_Interface
+Compiling module BCLK_Generator
+Compiling module UART_Receiver
+Compiling module UART_Transmitter
+Compiling module APB_UART_top
+Compiling module ReceivedataEvenParity
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable /home/hoanvip/VerilogProject/APB_UART_Project/ReceivedataEvenParity_isim_beh.exe
+Fuse Memory Usage: 645652 KB
+Fuse CPU Usage: 1170 ms
+GCC CPU Usage: 1210 ms
