@@ -1,0 +1,1093 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: APB_UART_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "APB_UART_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "APB_UART_top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : APB_UART_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" into library work
+Parsing module <UART_Transmitter>.
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" into library work
+Parsing module <UART_Receiver>.
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/BCLK_Generator.v" into library work
+Parsing module <BCLK_Generator>.
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/APB_Interface.v" into library work
+Parsing module <APB_Interface>.
+Analyzing Verilog file "/home/hoanvip/VerilogProject/APB_UART_Project/APB_UART_top.v" into library work
+Parsing module <APB_UART_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <APB_UART_top>.
+
+Elaborating module <APB_Interface>.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/APB_Interface.v" Line 172: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/APB_Interface.v" Line 174: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <BCLK_Generator>.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/BCLK_Generator.v" Line 68: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/BCLK_Generator.v" Line 79: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <UART_Receiver>.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 106: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 106: Assignment to fifo_empty ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 109: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 127: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 128: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 133: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 134: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 145: Signal <rx_thr_val> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 146: Signal <length> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 147: Signal <length> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:295 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 148: case condition never applies
+WARNING:HDLCompiler:295 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 149: case condition never applies
+WARNING:HDLCompiler:91 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 150: Signal <length> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:1127 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 201: Assignment to rx_done ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 274: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v" Line 279: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "/home/hoanvip/VerilogProject/APB_UART_Project/APB_UART_top.v" Line 168: Size mismatch in connection of port <data_out>. Formal port size is 10-bit while actual signal size is 8-bit.
+
+Elaborating module <UART_Transmitter>.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 90: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 93: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 108: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 109: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 114: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 115: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:295 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 125: case condition never applies
+WARNING:HDLCompiler:295 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 126: case condition never applies
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 158: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 159: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 196: Assignment to tx_done ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v" Line 258: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <APB_UART_top>.
+    Related source file is "/home/hoanvip/VerilogProject/APB_UART_Project/APB_UART_top.v".
+    Summary:
+	no macro.
+Unit <APB_UART_top> synthesized.
+
+Synthesizing Unit <APB_Interface>.
+    Related source file is "/home/hoanvip/VerilogProject/APB_UART_Project/APB_Interface.v".
+        IDLE = 2'b00
+        SETUP = 2'b01
+        ACCESS = 2'b10
+        WAIT = 2'b11
+WARNING:Xst:647 - Input <pwdata<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pprot> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pstrb<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <reg_data>.
+    Found 8-bit register for signal <reg_en>.
+    Found 4-bit register for signal <reg_thr>.
+    Found 2-bit register for signal <state>.
+    Found 11-bit register for signal <reg_bclk>.
+    Found 1-bit register for signal <pslverr_reg>.
+    Found 1-bit register for signal <preadytemp>.
+    Found 1-bit register for signal <write_reg>.
+    Found 1-bit register for signal <read_reg>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | pclk (rising_edge)                             |
+    | Reset              | presetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit 4-to-1 multiplexer for signal <_n0170> created at line 118.
+    Found 32-bit comparator greater for signal <GND_2_o_paddr[31]_LessThan_38_o> created at line 272
+    Summary:
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <APB_Interface> synthesized.
+
+Synthesizing Unit <BCLK_Generator>.
+    Related source file is "/home/hoanvip/VerilogProject/APB_UART_Project/BCLK_Generator.v".
+    Found 11-bit register for signal <b_regtx>.
+    Found 11-bit register for signal <b_regrx>.
+    Found 11-bit adder for signal <b_regrx[10]_GND_4_o_add_3_OUT> created at line 68.
+    Found 11-bit adder for signal <b_regtx[10]_GND_4_o_add_7_OUT> created at line 79.
+    Found 11-bit comparator equal for signal <b_regrx[10]_div_val[10]_equal_3_o> created at line 65
+    Found 11-bit comparator equal for signal <b_regtx[10]_div_val[10]_equal_7_o> created at line 76
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <BCLK_Generator> synthesized.
+
+Synthesizing Unit <UART_Receiver>.
+    Related source file is "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Receiver.v".
+        IDLE_STATE = 2'b00
+        START_STATE = 2'b01
+        DATA_STATE = 2'b10
+        STOP_STATE = 2'b11
+        FIFOLENGHT = 16
+        FIFOWIDTH = 9
+        IDLE = 2'b00
+        WAITING = 2'b01
+WARNING:Xst:653 - Signal <data_out<9:8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 16x10-bit dual-port RAM <Mram_fifo_mem> for signal <fifo_mem>.
+    Found 1-bit register for signal <rx_ov_reg>.
+    Found 5-bit register for signal <write_pt>.
+    Found 5-bit register for signal <read_pt>.
+    Found 5-bit register for signal <length>.
+    Found 5-bit register for signal <counter>.
+    Found 10-bit register for signal <rdata>.
+    Found 2-bit register for signal <fifo_state>.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <index>.
+    Found 4-bit register for signal <LENGTHDATA>.
+    Found 1-bit register for signal <write_en>.
+    Found finite state machine <FSM_1> for signal <fifo_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | resetn (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | resetn (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <write_pt[4]_GND_5_o_add_8_OUT> created at line 127.
+    Found 5-bit adder for signal <length[4]_GND_5_o_add_9_OUT> created at line 128.
+    Found 5-bit adder for signal <read_pt[4]_GND_5_o_add_12_OUT> created at line 133.
+    Found 4-bit adder for signal <index[3]_GND_5_o_add_64_OUT> created at line 245.
+    Found 5-bit adder for signal <counter[4]_GND_5_o_add_83_OUT> created at line 265.
+    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_14_OUT<4:0>> created at line 134.
+    Found 5-bit 4-to-1 multiplexer for signal <counter_next> created at line 206.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit comparator equal for signal <write_pt[4]_read_pt[4]_equal_5_o> created at line 109
+    Found 5-bit comparator lessequal for signal <n0029> created at line 146
+    Found 5-bit comparator lessequal for signal <n0031> created at line 147
+    Found 5-bit comparator lessequal for signal <n0033> created at line 150
+    Found 4-bit comparator equal for signal <index[3]_LENGTHDATA[3]_equal_63_o> created at line 239
+    Found 1-bit comparator equal for signal <check_parity_data_temp[8]_equal_122_o> created at line 279
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred  10 Latch(s).
+	inferred   6 Comparator(s).
+	inferred  29 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <UART_Receiver> synthesized.
+
+Synthesizing Unit <UART_Transmitter>.
+    Related source file is "/home/hoanvip/VerilogProject/APB_UART_Project/UART_Transmitter.v".
+        FIFOLENGHT = 16
+        FIFOWIDTH = 7
+        IDLE = 2'b00
+        LOADING = 2'b01
+        START_TX = 2'b10
+        WAIT_TX = 2'b11
+        bclk_length = 16
+        IDLE_STATE = 2'b00
+        START_STATE = 2'b01
+        DATA_STATE = 2'b10
+        STOP_STATE = 2'b11
+    Found 16x8-bit dual-port RAM <Mram_fifo_mem> for signal <fifo_mem>.
+    Found 5-bit register for signal <read_pt>.
+    Found 5-bit register for signal <length>.
+    Found 5-bit register for signal <counter>.
+    Found 5-bit register for signal <write_pt>.
+    Found 2-bit register for signal <fifo_state>.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <index>.
+    Found 4-bit register for signal <datalenght>.
+    Found 8-bit register for signal <rdata>.
+    Found 9-bit register for signal <data_temp>.
+    Found finite state machine <FSM_3> for signal <fifo_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | resetn (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | resetn (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <write_pt[4]_GND_17_o_add_7_OUT> created at line 108.
+    Found 5-bit adder for signal <length[4]_GND_17_o_add_8_OUT> created at line 109.
+    Found 5-bit adder for signal <read_pt[4]_GND_17_o_add_12_OUT> created at line 114.
+    Found 4-bit adder for signal <index[3]_GND_17_o_add_64_OUT> created at line 231.
+    Found 5-bit adder for signal <counter[4]_GND_17_o_add_75_OUT> created at line 250.
+    Found 5-bit subtractor for signal <GND_17_o_GND_17_o_sub_14_OUT<4:0>> created at line 115.
+    Found 1-bit 9-to-1 multiplexer for signal <index[3]_X_15_o_Mux_61_o> created at line 224.
+    Found 5-bit 3-to-1 multiplexer for signal <counter_next> created at line 201.
+WARNING:Xst:737 - Found 1-bit latch for signal <txd_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit comparator equal for signal <write_pt[4]_read_pt[4]_equal_1_o> created at line 90
+    Found 5-bit comparator equal for signal <write_pt[4]_read_pt[4]_equal_3_o> created at line 93
+    Found 5-bit comparator greater for signal <length[4]_PWR_17_o_LessThan_27_o> created at line 123
+    Found 5-bit comparator greater for signal <length[4]_GND_17_o_LessThan_28_o> created at line 124
+    Found 5-bit comparator lessequal for signal <n0034> created at line 127
+    Found 4-bit comparator equal for signal <index[3]_datalenght[3]_equal_64_o> created at line 228
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   6 Comparator(s).
+	inferred  12 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <UART_Transmitter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x10-bit dual-port RAM                               : 1
+ 16x8-bit dual-port RAM                                : 1
+# Adders/Subtractors                                   : 12
+ 11-bit adder                                          : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 6
+ 5-bit addsub                                          : 2
+# Registers                                            : 27
+ 1-bit register                                        : 6
+ 10-bit register                                       : 1
+ 11-bit register                                       : 3
+ 4-bit register                                        : 5
+ 5-bit register                                        : 8
+ 8-bit register                                        : 3
+ 9-bit register                                        : 1
+# Latches                                              : 11
+ 1-bit latch                                           : 11
+# Comparators                                          : 15
+ 1-bit comparator equal                                : 1
+ 11-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 2
+ 5-bit comparator equal                                : 3
+ 5-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 4
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 24
+ 1-bit 9-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 15
+ 5-bit 3-to-1 multiplexer                              : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor8                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <LENGTHDATA_0> in Unit <uart_rx> is equivalent to the following 2 FFs/Latches, which will be removed : <LENGTHDATA_1> <LENGTHDATA_2> 
+INFO:Xst:2261 - The FF/Latch <datalenght_0> in Unit <uart_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <datalenght_1> <datalenght_2> 
+
+Synthesizing (advanced) Unit <UART_Receiver>.
+The following registers are absorbed into counter <length>: 1 register on signal <length>.
+The following registers are absorbed into counter <write_pt>: 1 register on signal <write_pt>.
+The following registers are absorbed into counter <read_pt>: 1 register on signal <read_pt>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+INFO:Xst:3217 - HDL ADVISOR - Register <rdata> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_fifo_mem> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_pt<3:0>> |          |
+    |     diA            | connected to signal <(n0219,data_fre,data_temp<7:0>)> |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     addrB          | connected to signal <read_pt<3:0>>  |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <UART_Receiver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_Transmitter>.
+The following registers are absorbed into counter <read_pt>: 1 register on signal <read_pt>.
+The following registers are absorbed into counter <length>: 1 register on signal <length>.
+The following registers are absorbed into counter <write_pt>: 1 register on signal <write_pt>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+INFO:Xst:3231 - The small RAM <Mram_fifo_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_pt<3:0>> |          |
+    |     diA            | connected to signal <datain>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     addrB          | connected to signal <read_pt<3:0>>  |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <UART_Transmitter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x10-bit dual-port distributed RAM                   : 1
+ 16x8-bit dual-port distributed RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 11-bit adder                                          : 2
+ 5-bit adder                                           : 2
+# Counters                                             : 8
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 4
+ 5-bit updown counter                                  : 2
+# Registers                                            : 104
+ Flip-Flops                                            : 104
+# Comparators                                          : 15
+ 1-bit comparator equal                                : 1
+ 11-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 2
+ 5-bit comparator equal                                : 3
+ 5-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 4
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 21
+ 1-bit 9-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 15
+ 5-bit 3-to-1 multiplexer                              : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor8                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <LENGTHDATA_0> in Unit <UART_Receiver> is equivalent to the following 2 FFs/Latches, which will be removed : <LENGTHDATA_1> <LENGTHDATA_2> 
+INFO:Xst:2261 - The FF/Latch <datalenght_0> in Unit <UART_Transmitter> is equivalent to the following 2 FFs/Latches, which will be removed : <datalenght_1> <datalenght_2> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <apb_interface/FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_rx/FSM_2> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_rx/FSM_1> on signal <fifo_state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0
+ 01    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_tx/FSM_4> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_tx/FSM_3> on signal <fifo_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+Optimizing unit <APB_UART_top> ...
+
+Optimizing unit <APB_Interface> ...
+
+Optimizing unit <BCLK_Generator> ...
+
+Optimizing unit <UART_Receiver> ...
+
+Optimizing unit <UART_Transmitter> ...
+INFO:Xst:3203 - The FF/Latch <uart_tx/datalenght_0> in Unit <APB_UART_top> is the opposite to the following FF/Latch, which will be removed : <uart_tx/datalenght_3> 
+INFO:Xst:3203 - The FF/Latch <uart_rx/LENGTHDATA_0> in Unit <APB_UART_top> is the opposite to the following FF/Latch, which will be removed : <uart_rx/LENGTHDATA_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <uart_rx/LENGTHDATA_0> in Unit <APB_UART_top> is equivalent to the following FF/Latch, which will be removed : <uart_tx/datalenght_0> 
+Found area constraint ratio of 100 (+ 5) on block APB_UART_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 144
+ Flip-Flops                                            : 144
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : APB_UART_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 266
+#      GND                         : 1
+#      INV                         : 8
+#      LUT2                        : 22
+#      LUT3                        : 42
+#      LUT4                        : 31
+#      LUT5                        : 53
+#      LUT6                        : 101
+#      MUXCY                       : 6
+#      MUXF7                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 155
+#      FD                          : 9
+#      FDC                         : 43
+#      FDCE                        : 73
+#      FDE                         : 12
+#      FDP                         : 1
+#      FDPE                        : 6
+#      LD                          : 11
+# RAMS                             : 8
+#      RAM32M                      : 2
+#      RAM32X1D                    : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 91
+#      IBUF                        : 50
+#      OBUF                        : 41
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             153  out of  126800     0%  
+ Number of Slice LUTs:                  277  out of  63400     0%  
+    Number used as Logic:               257  out of  63400     0%  
+    Number used as Memory:               20  out of  19000     0%  
+       Number used as RAM:               20
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    301
+   Number with an unused Flip Flop:     148  out of    301    49%  
+   Number with an unused LUT:            24  out of    301     7%  
+   Number of fully used LUT-FF pairs:   129  out of    301    42%  
+   Number of unique control sets:        29
+
+IO Utilization: 
+ Number of IOs:                         118
+ Number of bonded IOBs:                  92  out of    210    43%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                                   | Clock buffer(FF name)       | Load  |
+-------------------------------------------------------------------------------+-----------------------------+-------+
+pclk                                                                           | BUFGP                       | 152   |
+uart_rx/state[1]_GND_5_o_Mux_115_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_115_o11:O)| NONE(*)(uart_rx/data_temp_0)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_113_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_113_o11:O)| NONE(*)(uart_rx/data_temp_1)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_109_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_109_o11:O)| NONE(*)(uart_rx/data_temp_3)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_107_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_107_o11:O)| NONE(*)(uart_rx/data_temp_4)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_111_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_111_o11:O)| NONE(*)(uart_rx/data_temp_2)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_105_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_105_o11:O)| NONE(*)(uart_rx/data_temp_5)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_103_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_103_o11:O)| NONE(*)(uart_rx/data_temp_6)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_101_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_101_o11:O)| NONE(*)(uart_rx/data_temp_7)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_99_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_99_o11:O)  | NONE(*)(uart_rx/data_temp_8)| 1     |
+uart_rx/state[1]_GND_5_o_Mux_97_o(uart_rx/Mmux_state[1]_GND_5_o_Mux_97_o11:O)  | NONE(*)(uart_rx/data_temp_9)| 1     |
+uart_tx/state[1]_PWR_18_o_Mux_88_o(uart_tx/Mmux_state[1]_PWR_18_o_Mux_88_o11:O)| NONE(*)(uart_tx/txd_reg)    | 1     |
+-------------------------------------------------------------------------------+-----------------------------+-------+
+(*) These 11 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.613ns (Maximum Frequency: 382.687MHz)
+   Minimum input arrival time before clock: 1.964ns
+   Maximum output required time after clock: 2.485ns
+   Maximum combinational path delay: 1.598ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pclk'
+  Clock period: 2.613ns (frequency: 382.687MHz)
+  Total number of paths / destination ports: 2494 / 252
+-------------------------------------------------------------------------
+Delay:               2.613ns (Levels of Logic = 4)
+  Source:            uart_tx/write_pt_2 (FF)
+  Destination:       uart_tx/length_4 (FF)
+  Source Clock:      pclk rising
+  Destination Clock: pclk rising
+
+  Data Path: uart_tx/write_pt_2 to uart_tx/length_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.361   0.730  uart_tx/write_pt_2 (uart_tx/write_pt_2)
+     LUT6:I0->O            3   0.097   0.305  uart_tx/write_pt[4]_read_pt[4]_equal_1_o54_SW2 (N42)
+     LUT5:I4->O            3   0.097   0.521  uart_tx/Mcount_length_lut<0>1 (uart_tx/Mcount_length_lut<0>)
+     LUT6:I3->O            2   0.097   0.299  uart_tx/Mcount_length_xor<4>122 (uart_tx/Mcount_length_xor<4>12)
+     LUT4:I3->O            1   0.097   0.000  uart_tx/Mcount_length_xor<4>11 (uart_tx/Result<4>1)
+     FDCE:D                    0.008          uart_tx/length_4
+    ----------------------------------------
+    Total                      2.613ns (0.757ns logic, 1.856ns route)
+                                       (29.0% logic, 71.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pclk'
+  Total number of paths / destination ports: 496 / 221
+-------------------------------------------------------------------------
+Offset:              1.964ns (Levels of Logic = 9)
+  Source:            paddr<4> (PAD)
+  Destination:       apb_interface/pslverr_reg (FF)
+  Destination Clock: pclk rising
+
+  Data Path: paddr<4> to apb_interface/pslverr_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.683  paddr_4_IBUF (paddr_4_IBUF)
+     LUT5:I0->O            1   0.097   0.000  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_lut<0> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<0> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<1> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<2> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<3> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<4> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<4>)
+     MUXCY:CI->O           1   0.253   0.379  apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<5> (apb_interface/Mcompar_GND_2_o_paddr[31]_LessThan_38_o_cy<5>)
+     LUT5:I3->O            1   0.097   0.000  apb_interface/paddr[0]_pstrb[0]_OR_44_o1 (apb_interface/paddr[0]_pstrb[0]_OR_44_o)
+     FDC:D                     0.008          apb_interface/pslverr_reg
+    ----------------------------------------
+    Total                      1.964ns (0.901ns logic, 1.063ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_115_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_0 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_115_o falling
+
+  Data Path: rxd to uart_rx/data_temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_0
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_113_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_1 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_113_o falling
+
+  Data Path: rxd to uart_rx/data_temp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_1
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_109_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_3 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_109_o falling
+
+  Data Path: rxd to uart_rx/data_temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_3
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_107_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_4 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_107_o falling
+
+  Data Path: rxd to uart_rx/data_temp_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_4
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_111_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_2 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_111_o falling
+
+  Data Path: rxd to uart_rx/data_temp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_2
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_105_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_5 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_105_o falling
+
+  Data Path: rxd to uart_rx/data_temp_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_5
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_103_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_6 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_103_o falling
+
+  Data Path: rxd to uart_rx/data_temp_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_6
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_101_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_7 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_101_o falling
+
+  Data Path: rxd to uart_rx/data_temp_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_7
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_99_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_8 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_99_o falling
+
+  Data Path: rxd to uart_rx/data_temp_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_8
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart_rx/state[1]_GND_5_o_Mux_97_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.371ns (Levels of Logic = 1)
+  Source:            rxd (PAD)
+  Destination:       uart_rx/data_temp_9 (LATCH)
+  Destination Clock: uart_rx/state[1]_GND_5_o_Mux_97_o falling
+
+  Data Path: rxd to uart_rx/data_temp_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.001   0.370  rxd_IBUF (rxd_IBUF)
+     LD:D                     -0.028          uart_rx/data_temp_9
+    ----------------------------------------
+    Total                      0.371ns (0.001ns logic, 0.370ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pclk'
+  Total number of paths / destination ports: 71 / 16
+-------------------------------------------------------------------------
+Offset:              2.485ns (Levels of Logic = 4)
+  Source:            apb_interface/reg_thr_1 (FF)
+  Destination:       totalint (PAD)
+  Source Clock:      pclk rising
+
+  Data Path: apb_interface/reg_thr_1 to totalint
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.697  apb_interface/reg_thr_1 (apb_interface/reg_thr_1)
+     LUT6:I0->O            1   0.097   0.295  apb_interface/itx_thr1 (apb_interface/itx_thr)
+     LUT3:I2->O            2   0.097   0.561  apb_interface/itx_thr2 (itx_thr_OBUF)
+     LUT6:I2->O            1   0.097   0.279  apb_interface/totalint1 (totalint_OBUF)
+     OBUF:I->O                 0.000          totalint_OBUF (totalint)
+    ----------------------------------------
+    Total                      2.485ns (0.652ns logic, 1.833ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'uart_tx/state[1]_PWR_18_o_Mux_88_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            uart_tx/txd_reg (LATCH)
+  Destination:       txd (PAD)
+  Source Clock:      uart_tx/state[1]_PWR_18_o_Mux_88_o falling
+
+  Data Path: uart_tx/txd_reg to txd
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  uart_tx/txd_reg (uart_tx/txd_reg)
+     OBUF:I->O                 0.000          txd_OBUF (txd)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               1.598ns (Levels of Logic = 4)
+  Source:            paddr<1> (PAD)
+  Destination:       prdata<6> (PAD)
+
+  Data Path: paddr<1> to prdata<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.001   0.398  paddr_1_IBUF (paddr_1_IBUF)
+     LUT2:I0->O            8   0.097   0.725  apb_interface/_n0153<1>1 (apb_interface/_n0153)
+     LUT6:I0->O            1   0.097   0.279  apb_interface/Mmux_prdata_reg71 (prdata_6_OBUF)
+     OBUF:I->O                 0.000          prdata_6_OBUF (prdata<6>)
+    ----------------------------------------
+    Total                      1.598ns (0.195ns logic, 1.403ns route)
+                                       (12.2% logic, 87.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock pclk
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+pclk                              |    2.613|         |         |         |
+uart_rx/state[1]_GND_5_o_Mux_101_o|         |    2.809|         |         |
+uart_rx/state[1]_GND_5_o_Mux_103_o|         |    2.819|         |         |
+uart_rx/state[1]_GND_5_o_Mux_105_o|         |    2.682|         |         |
+uart_rx/state[1]_GND_5_o_Mux_107_o|         |    2.637|         |         |
+uart_rx/state[1]_GND_5_o_Mux_109_o|         |    2.505|         |         |
+uart_rx/state[1]_GND_5_o_Mux_111_o|         |    2.421|         |         |
+uart_rx/state[1]_GND_5_o_Mux_113_o|         |    1.984|         |         |
+uart_rx/state[1]_GND_5_o_Mux_115_o|         |    1.852|         |         |
+uart_rx/state[1]_GND_5_o_Mux_97_o |         |    0.983|         |         |
+uart_rx/state[1]_GND_5_o_Mux_99_o |         |    1.768|         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart_tx/state[1]_PWR_18_o_Mux_88_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+pclk           |         |         |    2.175|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.39 secs
+ 
+--> 
+
+
+Total memory usage is 498436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

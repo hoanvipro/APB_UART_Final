@@ -1,0 +1,5 @@
+verilog work "UART_Transmitter.v"
+verilog work "UART_Receiver.v"
+verilog work "BCLK_Generator.v"
+verilog work "APB_Interface.v"
+verilog work "APB_UART_top.v"

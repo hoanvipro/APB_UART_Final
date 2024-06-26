@@ -1,0 +1,30 @@
+Command line:
+   ReceivedatanoParity_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53049
+
+Mon Jun 24 15:40:55 2024
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 195.822 Meg
+
+ Total Signals          : 145
+ Total Nets             : 194
+ Total Signal Drivers   : 60
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 85
+ Total Traceable Variables  : 101
+ Total Scalar Nets and Variables : 1082
+Total Line Count : 426
+Total Line Count : 426
+
+ Total Simulation Time: 0.51 sec
+
+ Current Memory Usage: 271.323 Meg
+
+Mon Jun 24 15:54:59 2024
+

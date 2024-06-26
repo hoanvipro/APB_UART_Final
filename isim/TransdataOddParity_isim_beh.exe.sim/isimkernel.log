@@ -1,0 +1,29 @@
+Command line:
+   TransdataOddParity_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54159
+
+Tue Jun 18 20:34:24 2024
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 195.817 Meg
+
+ Total Signals          : 145
+ Total Nets             : 194
+ Total Signal Drivers   : 60
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 85
+ Total Traceable Variables  : 101
+ Total Scalar Nets and Variables : 1082
+Total Line Count : 407
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 271.319 Meg
+
+Tue Jun 18 20:34:34 2024
+
