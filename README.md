@@ -68,16 +68,16 @@ The enviroment testing is built with 100MHz for system frequency and 460800 for 
 There are some image of result:
 ### Trans data from APB to UART with no parity:
 Setting enable signal, baudrate and data in APB interface:
-![settingtransnoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/bebab1ab-4b7e-4eef-a061-f29f95367865)
+![settingtransnoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/7df3caac-a3b2-487d-af74-a713756f5e34)
 Result in TXD:
-![txdtransnoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/d7795d96-4f78-48c9-83cf-29336956ed99)
+![txdtransnoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/baf93d8a-45bd-495e-a7da-69dd8035cbe3)
 ### Receive data from APB to UART with no parity:
 Setting enable signal, baudrate:
-![settingreceivenpparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/c6bbff92-d72c-4952-a57b-42a5067f349d)
+![settingreceivenoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/a31db284-7526-42ae-ae23-5f52a9d3a803)
 Data in RXD:
 ![rxdreceivenoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/65c59c7c-f45b-4ced-91fa-fdc4c436a4c7)
 Read data in APB:
-![readapbnoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/bd4efc25-e662-4616-9b4e-93495bb84528)
+![readapbnoparity](https://github.com/hoanvipro/APB_UART_Final/assets/130170857/79aed659-c9f0-41f6-a278-ed71d6a3c52f)
 ## Eviroment testing using UVM
 This simulation environment is still under construction and will be completed in the future.
 ## Reference
