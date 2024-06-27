@@ -43,7 +43,7 @@ There are 8 enables signal can be set:
 |PARITY_EN|REG_EN[6]|Enable trans and recive data with parity|
 |PARITY_TYPE|REG_EN[7]|Type of parity, 0 is odd parity and 1 is even parity|
 ## Testing IP
-IP is test with total 17 test cases:
+IP works properly with all 17 test cases:
 |No.|Name|
 |:-|:-|
 |1|Trans data from APB to UART with no parity|
@@ -62,8 +62,7 @@ IP is test with total 17 test cases:
 |14|Active I_RXOV signal|
 |15|Active I_PE signal|
 |16|Active I_FE signal|
-|17|Active PSLVERR signal|
-IP works properly with all 17 test cases.
+|17|Active PSLVERR signal|  
 ## Some images of result.
 The enviroment testing is built with 100MHz for system frequency and 460800 for default baudrate (BCLK_VAL = 14).  
 There are some image of result:
