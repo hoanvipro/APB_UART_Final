@@ -2,8 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
-// 
-// Create Date:    14:57:09 05/30/2024 
 // Design Name: 
 // Module Name:    APB_UART_top 
 // Project Name: 
