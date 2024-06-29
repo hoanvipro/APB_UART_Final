@@ -2,8 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
-// 
-// Create Date:    14:53:39 05/30/2024 
 // Design Name: 
 // Module Name:    BCLK_Generator 
 // Project Name: 
