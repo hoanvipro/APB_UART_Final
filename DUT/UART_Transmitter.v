@@ -2,8 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
-// 
-// Create Date:    14:54:35 05/30/2024 
 // Design Name: 
 // Module Name:    UART_Transmitter 
 // Project Name: 
