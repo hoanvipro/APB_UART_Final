@@ -2,8 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
-// 
-// Create Date:    14:56:10 05/30/2024 
 // Design Name: 
 // Module Name:    UART_Receiver 
 // Project Name: 
