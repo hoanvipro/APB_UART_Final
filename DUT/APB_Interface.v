@@ -2,8 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
-// 
-// Create Date:    14:51:17 05/30/2024 
 // Design Name: 
 // Module Name:    APB_Interface 
 // Project Name: 
